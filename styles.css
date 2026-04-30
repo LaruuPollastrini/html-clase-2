@@ -1,0 +1,71 @@
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para la barra negra (CLASE) */
+.barra-negra {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 11px;
+}
+
+.boton-suscripcion {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+
+/* Estilo para la barra verde (CLASE) */
+.encabezado-verde {
+    background-color: #8cc63f;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo-ole {
+    font-size: 40px;
+    font-style: italic;
+    margin: 0;
+}
+
+/* EL ÚNICO ID EN TODO TU CSS */
+#pagina-tini {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+/* Estilos de Tini (CLASES) */
+.tarjeta-formulario {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.boton-enviar {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
