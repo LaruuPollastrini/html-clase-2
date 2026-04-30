@@ -1,71 +1,181 @@
 
-/* Estilos generales */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Estilo para la barra negra (CLASE) */
-.barra-negra {
-    background-color: #111;
+#header-ole-original {
+    width: 100%;
+}
+
+
+.top-bar-oscura {
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 8px 20px;
-    font-size: 11px;
-}
-
-.boton-suscripcion {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 4px 10px;
-    font-weight: bold;
-}
-
-/* Estilo para la barra verde (CLASE) */
-.encabezado-verde {
-    background-color: #8cc63f;
-    padding: 10px 20px;
-    color: white;
-    display: flex;
     align-items: center;
+    padding: 6px 15px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
-.logo-ole {
-    font-size: 40px;
-    font-style: italic;
-    margin: 0;
-}
+.social-block { display: flex; gap: 12px; }
+.icon-verde { color: #8ebf26; cursor: pointer; }
+.icon-verde.underline { text-decoration: underline; }
 
-/* EL ÚNICO ID EN TODO TU CSS */
-#pagina-tini {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 10px;
-}
+.user-block { display: flex; align-items: center; gap: 18px; }
+.top-link { color: white; text-decoration: none; }
 
-/* Estilos de Tini (CLASES) */
-.tarjeta-formulario {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.boton-enviar {
-    background-color: #ff007f;
+.btn-suscribe-orange {
+    background-color: orange;
     color: white;
     border: none;
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
+    padding: 6px 12px;
+    border-radius: 4px;
     font-weight: bold;
-    font-size: 16px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
+.lang-sel { display: flex; align-items: center; gap: 5px; }
+
+
+.main-bar-verde {
+    background-color: #99cc33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px; 
+}
+
+.logos-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+
+.ole-logo-diagonal {
+    height: 40px; 
+    display: block;
+}
+
+.seccion-sub-titulo {
+    color: white;
+    font-size: 32px; 
+    font-weight: bold;
+    font-style: italic; 
+}
+
+.burger-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger-line {
+    width: 28px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.titulo-noticia {
+    color: #1a2329; 
+    font-size: 64px; 
+    font-weight: 900; 
+    line-height: 1.0; 
+    max-width: 850px; 
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+main {
+    max-width: 900px; 
+    padding: 20px;
+}
+
+
+article img {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 700;
+}
+
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 5px solid #99cc33; /* Detalle verde Olé */
+    margin-top: 50px;
+}
+
+form h2 {
+    text-align: center;
+    color: black
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: orange; 
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: orange;
+}
