@@ -381,3 +381,164 @@ width: 72px;
     color: inherit;        
     display: block;        
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .article-header h1 {
+        font-size: 38px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .social-bar {
+        left: 20px;
+    }
+
+    .sections-nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sections-nav li {
+        padding: 5px 10px;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .top-nav {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu-icons {
+        justify-content: center;
+    }
+
+    .live-button {
+        justify-self: center;
+    }
+
+    .sections-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sections-nav li {
+        padding: 5px;
+    }
+
+    .article-header h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .author-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cuerpo-noticia {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .social-bar {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px 0;
+        gap: 12px;
+    }
+
+    .social-bar a img {
+        width: 45px !important;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+}
+
+
+/* =========================
+   MOBILE PEQUEÑO
+========================= */
+
+@media (max-width: 480px) {
+
+    .article-header h1 {
+        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .cuerpo-noticia {
+        font-size: 15px;
+    }
+
+    .news-header h2 {
+        font-size: 20px;
+    }
+
+    form h2 {
+        font-size: 18px;
+    }
+
+    .radio-text,
+    .en-vivo {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    .sections-nav a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .social-bar {
+        display: none;
+    }
+}
